@@ -1,0 +1,49 @@
+<style>
+        body {
+            padding: 20px;
+        }
+        .centralizado {
+            text-align: center;
+        }
+        .formacao, .experiencia {
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .formacao input, .experiencia input {
+            display: inline-block;
+            margin: 0px 0;
+        }
+        .add-button {
+            background-color: #4CAF50;
+            color: black;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-control {
+            width: 100%; /* Ajuste a largura conforme necessário */
+            height: 30px; /* Ajuste a altura conforme necessário */
+        }
+        .botoes .botao {
+            margin: 10px;
+        }
+        .photo {
+            display: block;
+            margin: 0 auto;
+            width: 200px; /* Ajuste a largura conforme necessário */
+            height: auto; /* Ajuste a altura conforme necessário */
+            border-radius: 50%;
+        }
+        img {
+            width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+            border-radius: 50%; /* Opcional: arredonda a imagem */
+            display: block; /* Para garantir que a imagem fique em uma linha separada */
+            margin: 0 auto 20px; /* Centraliza a imagem e adiciona um espaço abaixo dela */
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
