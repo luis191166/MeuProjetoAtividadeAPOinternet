@@ -1,6 +1,7 @@
 <style>
         body {
             padding: 20px;
+            background-color: #f2f2f2; /* Fundo cinza claro */
         }
         .centralizado {
             text-align: center;
@@ -8,10 +9,13 @@
         .formacao, .experiencia {
             margin: 10px 0;
             padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff; /* Fundo branco para destacar conteúdo */
         }
-        .formacao input, .experiencia input {
-            display: inline-block;
-            margin: 0px 0;
+        .formacao input, .experiencia input, .experiencia textarea {
+            width: 100%;
+            margin-bottom: 5px;
         }
         .add-button {
             background-color: #4CAF50;
@@ -20,10 +24,7 @@
             padding: 10px;
             font-size: 16px;
             cursor: pointer;
-        }
-        .form-control {
-            width: 100%; /* Ajuste a largura conforme necessário */
-            height: 30px; /* Ajuste a altura conforme necessário */
+            margin-bottom: 10px;
         }
         .botoes .botao {
             margin: 10px;
@@ -31,19 +32,28 @@
         .photo {
             display: block;
             margin: 0 auto;
-            width: 200px; /* Ajuste a largura conforme necessário */
-            height: auto; /* Ajuste a altura conforme necessário */
+            width: 200px;
+            height: auto;
             border-radius: 50%;
         }
         img {
-            width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
-            border-radius: 50%; /* Opcional: arredonda a imagem */
-            display: block; /* Para garantir que a imagem fique em uma linha separada */
-            margin: 0 auto 20px; /* Centraliza a imagem e adiciona um espaço abaixo dela */
+            width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
         }
         @media print {
             .no-print {
                 display: none;
+            }
+            .print-visible {
+                display: block !important;
             }
         }
     </style>
