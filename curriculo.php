@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Luís Carlos</title>
+    <title>Gerenciado de Currículos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
@@ -63,37 +63,11 @@
             .print-visible {
                 display: block !important;
             }
-            
-            .container {
-                max-width: 100%;
-                margin: 0 auto;
-            }
-            
-            .formacao, .experiencia {
-                margin-bottom: 10mm;
-                page-break-inside: avoid;
-                padding: 5mm;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                background-color: #f2f2f2;
-            }
-            
-            .formacao p, .experiencia p {
-                margin: 3mm 0;
-            }
-            
-            img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-                margin: 0 auto;
-                border-radius: 50%;
-            }
         }
     </style>
 </head>
 <body>
-        <div id="preenchimento-section" class="section active">
+    <div id="preenchimento-section" class="section active">
         <div class="header centralizado">
             <h1>Currículo Vitae</h1>
             <img id="fotoCurriculo" src="#" alt="Sua Foto" style="display: none;">
@@ -382,6 +356,5 @@
                 });
         }
     </script>
-
 </body>
 </html>
